@@ -67,8 +67,9 @@ def check_and_display():
         if is_lowest:
             line += "  ← 📉 Lowest Today"
         output_text.insert(tk.END, line + "\n")
-if low_volume_found:
-    pass
+    if low_volume_found:
+        output_text.insert(tk.END, "\n🔔 Low volume detected!\n")
+
 
 
 # ✅ 4. Auto refresh every 5 minutes
