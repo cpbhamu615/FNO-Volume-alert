@@ -68,9 +68,10 @@ def check_and_display():
             line += "  ← 📉 Lowest Today"
         output_text.insert(tk.END, line + "\n")
 
-  if low_volume_found:
+    if low_volume_found:
     return jsonify({'alert': True, 'message': 'Low volume detected!'})
-        # ✅ 4. Auto refresh every 5 minutes
+
+# ✅ 4. Auto refresh every 5 minutes
 def auto_refresh():
     while True:
         check_and_display()
