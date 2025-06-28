@@ -5,7 +5,6 @@ from tkinter import scrolledtext
 from datetime import datetime
 import threading
 import time
-import winsound
 
 # ✅ 1. Load stock list from local CSV file (with uppercase safety)
 def get_fno_stocks():
@@ -69,10 +68,8 @@ def check_and_display():
             line += "  ← 📉 Lowest Today"
         output_text.insert(tk.END, line + "\n")
 
-    if low_volume_found:
-        winsound.Beep(1000, 400)
-
-# ✅ 4. Auto refresh every 5 minutes
+    if low_volume_found:#
+        # ✅ 4. Auto refresh every 5 minutes
 def auto_refresh():
     while True:
         check_and_display()
