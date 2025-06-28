@@ -69,6 +69,7 @@ def check_and_display():
         output_text.insert(tk.END, line + "\n")
 
     if low_volume_found:
+    pass
     return jsonify({'alert': True, 'message': 'DL!'})
 
 # ✅ 4. Auto refresh every 5 minutes
