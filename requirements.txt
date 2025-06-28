@@ -1,0 +1,5 @@
+yfinance
+pandas
+playsound
+flask
+gunicorn
