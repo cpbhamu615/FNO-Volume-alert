@@ -68,7 +68,7 @@ def check_and_display():
             line += "  ← 📉 Lowest Today"
         output_text.insert(tk.END, line + "\n")
     if low_volume_found:
-        output_text.insert(tk.END, "\n🔔 Low volume detected!\n")
+       pass
 
 
 
